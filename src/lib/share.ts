@@ -1,3 +1,5 @@
+import { trackShare } from "./analytics";
+
 const SITE_URL = "https://claudetoeu.com";
 const HASHTAG = "#ClaudeToEU";
 
@@ -8,16 +10,19 @@ const messages = {
 };
 
 export function shareOnTwitter() {
+  trackShare("x");
   const url = `https://x.com/intent/tweet?text=${encodeURIComponent(messages.twitter)}`;
   window.open(url, "_blank", "noopener,noreferrer");
 }
 
 export function shareOnLinkedIn() {
+  trackShare("linkedin");
   const url = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(SITE_URL)}`;
   window.open(url, "_blank", "noopener,noreferrer");
 }
 
 export function shareOnBluesky() {
+  trackShare("bluesky");
   const url = `https://bsky.app/intent/compose?text=${encodeURIComponent(messages.bluesky)}`;
   window.open(url, "_blank", "noopener,noreferrer");
 }
@@ -25,6 +30,7 @@ export function shareOnBluesky() {
 export async function copyLink(): Promise<boolean> {
   try {
     await navigator.clipboard.writeText(SITE_URL);
+    trackShare("copy_link");
     return true;
   } catch {
     return false;

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0D1B3E"/>
+
+  <!-- Grid pattern -->
+  <defs>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- EU Stars -->
+  <g transform="translate(600,200)">
+    <g fill="#FFCC00" opacity="0.3">
+      <circle cx="0" cy="-80" r="6"/>
+      <circle cx="40" cy="-69.3" r="6"/>
+      <circle cx="69.3" cy="-40" r="6"/>
+      <circle cx="80" cy="0" r="6"/>
+      <circle cx="69.3" cy="40" r="6"/>
+      <circle cx="40" cy="69.3" r="6"/>
+      <circle cx="0" cy="80" r="6"/>
+      <circle cx="-40" cy="69.3" r="6"/>
+      <circle cx="-69.3" cy="40" r="6"/>
+      <circle cx="-80" cy="0" r="6"/>
+      <circle cx="-69.3" cy="-40" r="6"/>
+      <circle cx="-40" cy="-69.3" r="6"/>
+    </g>
+    <!-- Anthropic spark -->
+    <path d="M-20,-30 L0,30 L20,-30 Z" fill="#DA7756" opacity="0.6"/>
+  </g>
+
+  <!-- Main text -->
+  <text x="600" y="360" text-anchor="middle" font-family="Georgia, serif" font-size="42" font-weight="bold" fill="white">
+    America punishes principle.
+  </text>
+  <text x="600" y="420" text-anchor="middle" font-family="Georgia, serif" font-size="42" font-weight="bold" fill="#FFCC00">
+    Europe should reward it.
+  </text>
+
+  <!-- URL and hashtag -->
+  <text x="600" y="520" text-anchor="middle" font-family="monospace" font-size="20" fill="rgba(255,255,255,0.5)">
+    claudetoeu.com · #ClaudeToEU
+  </text>
+
+  <!-- Bottom accent line -->
+  <rect x="0" y="620" width="1200" height="10" fill="#FFCC00"/>
+</svg>

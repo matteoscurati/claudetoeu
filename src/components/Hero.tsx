@@ -79,7 +79,7 @@ export default function Hero() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-10 scroll-arrow">
+      <div className="absolute bottom-10 scroll-arrow" aria-hidden="true">
         <svg
           width="24"
           height="24"

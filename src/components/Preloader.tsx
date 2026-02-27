@@ -14,6 +14,8 @@ export default function Preloader({ onDone }: { onDone: () => void }) {
 
   return (
     <div
+      role="status"
+      aria-label="Loading page"
       className={`fixed inset-0 z-[100] bg-dark flex items-center justify-center transition-opacity duration-500 ${
         fadeOut ? "opacity-0 pointer-events-none" : "opacity-100"
       }`}

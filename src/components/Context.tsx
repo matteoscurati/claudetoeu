@@ -25,7 +25,7 @@ const cards = [
 function CardIcon({ type }: { type: string }) {
   if (type === "eye") {
     return (
-      <svg viewBox="0 0 48 48" className="w-12 h-12 icon-draw" fill="none" stroke="currentColor" strokeWidth="2">
+      <svg viewBox="0 0 48 48" className="w-12 h-12 icon-draw" fill="none" stroke="currentColor" strokeWidth="2" role="img" aria-label="No surveillance">
         <ellipse cx="24" cy="24" rx="18" ry="12" />
         <circle cx="24" cy="24" r="6" />
         {/* Strike-through */}
@@ -35,7 +35,7 @@ function CardIcon({ type }: { type: string }) {
   }
   if (type === "crosshair") {
     return (
-      <svg viewBox="0 0 48 48" className="w-12 h-12 icon-draw" fill="none" stroke="currentColor" strokeWidth="2">
+      <svg viewBox="0 0 48 48" className="w-12 h-12 icon-draw" fill="none" stroke="currentColor" strokeWidth="2" role="img" aria-label="No autonomous weapons">
         <circle cx="24" cy="24" r="16" />
         <circle cx="24" cy="24" r="8" />
         <line x1="24" y1="4" x2="24" y2="16" />
@@ -48,7 +48,7 @@ function CardIcon({ type }: { type: string }) {
   }
   // building / pentagon
   return (
-    <svg viewBox="0 0 48 48" className="w-12 h-12 icon-draw" fill="none" stroke="currentColor" strokeWidth="2">
+    <svg viewBox="0 0 48 48" className="w-12 h-12 icon-draw" fill="none" stroke="currentColor" strokeWidth="2" role="img" aria-label="Government threat">
       <polygon points="24,4 44,18 38,40 10,40 4,18" />
       <rect x="18" y="26" width="12" height="14" />
     </svg>

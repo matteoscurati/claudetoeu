@@ -51,6 +51,8 @@ export default function EUStars({
       height={size}
       viewBox={`0 0 ${size} ${size}`}
       className={className}
+      role="img"
+      aria-label="European Union stars"
     >
       <g className="stars-group">
         {Array.from({ length: 12 }).map((_, i) => {

@@ -26,6 +26,7 @@ src/
     Context.tsx      # 3 animated cards (what happened)
     Opportunity.tsx  # Scroll-pinned manifesto (viral core)
     Equation.tsx     # Values alignment infographic (Anthropic + Europe)
+    DataStats.tsx    # 3 animated stat cards (talent, market, momentum)
     TheAsk.tsx       # 4-point action checklist
     Close.tsx        # Dramatic "Europe." scale-up finale
     ShareBar.tsx     # Share buttons (X, LinkedIn, Bluesky)
@@ -54,4 +55,4 @@ src/
 
 ## Page Flow
 
-Hero(dark) → Context(navy) → Opportunity(dark→cream) → Equation(cream) → Ask(EU blue) → Close(dark) → Share(cream) → Footer(dark)
+Hero(dark) → Context(navy) → Opportunity(dark→cream) → Equation(cream) → DataStats(navy) → Ask(EU blue) → Close(dark) → Share(cream) → Footer(dark)

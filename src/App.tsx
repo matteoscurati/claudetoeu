@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import Context from "./components/Context";
 import Opportunity from "./components/Opportunity";
 import Equation from "./components/Equation";
+import DataStats from "./components/DataStats";
 import TheAsk from "./components/TheAsk";
 import Close from "./components/Close";
 import ShareBar from "./components/ShareBar";
@@ -26,6 +27,7 @@ export default function App() {
         <Context />
         <Opportunity />
         <Equation />
+        <DataStats />
         <TheAsk />
         <Close />
         <ShareBar />

@@ -63,35 +63,37 @@ export default function Close() {
   return (
     <section
       ref={sectionRef}
-      className="section-full bg-dark grid-bg flex flex-col items-center justify-center px-6 py-24 text-center"
+      className="section-full bg-dark grid-bg flex flex-col items-center justify-center px-6 py-24 text-center ambient-glow"
     >
-      <p
-        ref={line1Ref}
-        className="text-xl sm:text-2xl md:text-3xl text-white/70 max-w-3xl font-serif italic leading-relaxed"
-      >
-        This isn't just about one company.
-      </p>
-
-      <p
-        ref={line2Ref}
-        className="mt-6 text-lg sm:text-xl text-white/50 max-w-2xl leading-relaxed"
-      >
-        It's about whether the future of AI is shaped by those who build weapons, or those who build guardrails.
-      </p>
-
-      <div className="mt-16 relative">
-        <EUStars size={240} className="mx-auto opacity-20" />
-        <h2
-          ref={answerRef}
-          className="absolute inset-0 flex items-center justify-center font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black"
+      <div className="relative z-10 flex flex-col items-center">
+        <p
+          ref={line1Ref}
+          className="text-xl sm:text-2xl md:text-3xl text-white/70 max-w-3xl font-serif italic leading-relaxed"
         >
-          <span className="text-eu-gold">Europe.</span>
-        </h2>
-      </div>
+          This isn't just about one company.
+        </p>
 
-      <p className="mt-8 text-xl sm:text-2xl text-white/60 font-serif italic">
-        The answer is <span className="text-eu-gold font-bold">Europe</span>.
-      </p>
+        <p
+          ref={line2Ref}
+          className="mt-6 text-lg sm:text-xl text-white/50 max-w-2xl leading-relaxed"
+        >
+          It's about whether the future of AI is shaped by those who build weapons, or those who build guardrails.
+        </p>
+
+        <div className="mt-16 relative">
+          <EUStars size={240} className="mx-auto opacity-20" />
+          <h2
+            ref={answerRef}
+            className="absolute inset-0 flex items-center justify-center font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black"
+          >
+            <span className="text-eu-gold gold-glow">Europe.</span>
+          </h2>
+        </div>
+
+        <p className="mt-8 text-xl sm:text-2xl text-white/60 font-serif italic">
+          The answer is <span className="text-eu-gold font-bold gold-glow">Europe</span>.
+        </p>
+      </div>
     </section>
   );
 }

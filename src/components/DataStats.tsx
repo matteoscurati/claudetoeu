@@ -50,8 +50,8 @@ function StatCard({
   });
 
   return (
-    <div className="data-card bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center hover:border-eu-gold/30 transition-colors duration-300">
-      <p className="font-mono text-4xl sm:text-5xl font-bold text-eu-gold mb-3">
+    <div className="data-card bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center glass-card">
+      <p className="font-mono text-4xl sm:text-5xl font-bold text-eu-gold mb-3 gold-glow">
         {formatted}
       </p>
       <h3 className="font-serif text-xl font-bold text-white mb-3">
@@ -109,29 +109,31 @@ export default function DataStats() {
   }, []);
 
   return (
-    <section className="section-full bg-navy flex flex-col items-center justify-center px-6 py-24">
-      <h2 className="font-mono text-sm text-eu-gold tracking-[0.3em] uppercase mb-16">
-        The Numbers
-      </h2>
+    <section className="section-full bg-navy flex flex-col items-center justify-center px-6 py-24 ambient-glow">
+      <div className="relative z-10 flex flex-col items-center w-full">
+        <h2 className="font-mono text-sm text-eu-gold tracking-[0.3em] uppercase mb-16">
+          The Numbers
+        </h2>
 
-      <div
-        ref={cardsRef}
-        className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl w-full"
-      >
-        {stats.map((stat) => (
-          <StatCard key={stat.label} stat={stat} enabled={countersEnabled} />
-        ))}
+        <div
+          ref={cardsRef}
+          className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl w-full"
+        >
+          {stats.map((stat) => (
+            <StatCard key={stat.label} stat={stat} enabled={countersEnabled} />
+          ))}
+        </div>
+
+        <p
+          ref={closingRef}
+          className="mt-20 font-serif italic text-white/60 text-lg sm:text-xl max-w-3xl text-center leading-relaxed"
+        >
+          Anthropic has already voted with its feet.{" "}
+          <span className="text-eu-gold">
+            Now it's time to vote with its headquarters.
+          </span>
+        </p>
       </div>
-
-      <p
-        ref={closingRef}
-        className="mt-20 font-serif italic text-white/60 text-lg sm:text-xl max-w-3xl text-center leading-relaxed"
-      >
-        Anthropic has already voted with its feet.{" "}
-        <span className="text-eu-gold">
-          Now it's time to vote with its headquarters.
-        </span>
-      </p>
     </section>
   );
 }

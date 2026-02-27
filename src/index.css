@@ -109,3 +109,46 @@ body {
   font-variant-numeric: tabular-nums;
   font-family: var(--font-mono);
 }
+
+/* Gold glow on key text */
+.gold-glow {
+  text-shadow: 0 0 10px rgba(255,204,0,0.4), 0 0 40px rgba(255,204,0,0.15), 0 0 80px rgba(255,204,0,0.05);
+}
+
+/* Card hover lift + glow */
+.glass-card {
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.glass-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  border-color: rgba(255,204,0,0.3);
+  box-shadow: 0 8px 32px rgba(255,204,0,0.08), 0 0 0 1px rgba(255,204,0,0.1);
+}
+
+/* Animated gradient drift on dark sections */
+@keyframes gradient-drift {
+  0%   { background-position: 0% 0%; }
+  50%  { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
+}
+.ambient-glow::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 60% at 50% 50%, rgba(0,51,153,0.08), transparent 70%);
+  background-size: 200% 200%;
+  animation: gradient-drift 20s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* SVG icon stroke-draw */
+.icon-draw path, .icon-draw circle, .icon-draw ellipse,
+.icon-draw line, .icon-draw polygon, .icon-draw rect {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  transition: stroke-dashoffset 1s ease-out;
+}
+.icon-draw.drawn path, .icon-draw.drawn circle, .icon-draw.drawn ellipse,
+.icon-draw.drawn line, .icon-draw.drawn polygon, .icon-draw.drawn rect {
+  stroke-dashoffset: 0;
+}

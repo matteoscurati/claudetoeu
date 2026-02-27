@@ -69,7 +69,7 @@ export default function TheAsk() {
         {actions.map((action) => (
           <div
             key={action.number}
-            className="ask-item flex gap-6 items-start bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:border-eu-gold/30 transition-colors duration-300"
+            className="ask-item flex gap-6 items-start bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 glass-card"
           >
             <div className="flex-shrink-0 w-12 h-12 rounded-full bg-eu-gold/20 flex items-center justify-center">
               <span className="font-mono text-eu-gold font-bold text-sm">

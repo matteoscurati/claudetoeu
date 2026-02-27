@@ -49,21 +49,21 @@ export default function ShareBar() {
         <div className="flex flex-wrap justify-center gap-4 mb-10">
           <button
             onClick={shareOnTwitter}
-            className="flex items-center gap-2 bg-dark text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-dark/80 transition-colors cursor-pointer"
+            className="flex items-center gap-2 bg-dark text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-dark/80 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer"
           >
             <XIcon />
             Share on X
           </button>
           <button
             onClick={shareOnLinkedIn}
-            className="flex items-center gap-2 bg-[#0077B5] text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-[#0077B5]/80 transition-colors cursor-pointer"
+            className="flex items-center gap-2 bg-[#0077B5] text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-[#0077B5]/80 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer"
           >
             <LinkedInIcon />
             Share on LinkedIn
           </button>
           <button
             onClick={shareOnBluesky}
-            className="flex items-center gap-2 bg-[#0085FF] text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-[#0085FF]/80 transition-colors cursor-pointer"
+            className="flex items-center gap-2 bg-[#0085FF] text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-[#0085FF]/80 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer"
           >
             <BlueskyIcon />
             Share on Bluesky
@@ -73,7 +73,7 @@ export default function ShareBar() {
         {/* Copy link */}
         <button
           onClick={handleCopy}
-          className="inline-flex items-center gap-2 bg-white border border-dark/10 text-dark px-6 py-3 rounded-full font-medium text-sm hover:border-eu-gold transition-colors cursor-pointer"
+          className="inline-flex items-center gap-2 bg-white border border-dark/10 text-dark px-6 py-3 rounded-full font-medium text-sm hover:border-eu-gold hover:scale-105 hover:shadow-[0_0_20px_rgba(255,204,0,0.15)] active:scale-95 transition-all duration-200 cursor-pointer"
         >
           {copied ? (
             <>

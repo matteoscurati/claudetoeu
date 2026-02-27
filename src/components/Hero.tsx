@@ -44,37 +44,39 @@ export default function Hero() {
   return (
     <section
       ref={sectionRef}
-      className="section-full bg-dark grid-bg flex flex-col items-center justify-center px-6 text-center"
+      className="section-full bg-dark grid-bg flex flex-col items-center justify-center px-6 text-center ambient-glow"
     >
-      {/* Attribution */}
-      <p className="font-mono text-sm text-anthropic-terra/70 mb-8 tracking-widest uppercase">
-        Dario Amodei, CEO of Anthropic
-      </p>
+      <div className="relative z-10 flex flex-col items-center">
+        {/* Attribution */}
+        <p className="font-mono text-sm text-anthropic-terra/70 mb-8 tracking-widest uppercase">
+          Dario Amodei, CEO of Anthropic
+        </p>
 
-      {/* Typewriter quote */}
-      <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white max-w-5xl leading-tight">
-        <span>{displayed}</span>
-        {!isDone && <span className="typewriter-cursor" />}
-      </h1>
+        {/* Typewriter quote */}
+        <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white max-w-5xl leading-tight">
+          <span>{displayed}</span>
+          {!isDone && <span className="typewriter-cursor" />}
+        </h1>
 
-      {/* Subtitle */}
-      <p
-        ref={subtitleRef}
-        className="mt-8 text-lg sm:text-xl md:text-2xl text-white/70 max-w-3xl font-sans leading-relaxed"
-        style={{ opacity: 0 }}
-      >
-        The world's leading AI safety lab just told the most powerful military on Earth:{" "}
-        <span className="text-anthropic-terra font-semibold">No.</span>
-      </p>
+        {/* Subtitle */}
+        <p
+          ref={subtitleRef}
+          className="mt-8 text-lg sm:text-xl md:text-2xl text-white/70 max-w-3xl font-sans leading-relaxed"
+          style={{ opacity: 0 }}
+        >
+          The world's leading AI safety lab just told the most powerful military on Earth:{" "}
+          <span className="text-anthropic-terra font-semibold">No.</span>
+        </p>
 
-      {/* Teaser */}
-      <p
-        ref={teaserRef}
-        className="mt-12 text-2xl sm:text-3xl md:text-4xl font-serif italic gold-shimmer"
-        style={{ opacity: 0 }}
-      >
-        Europe, this is your moment.
-      </p>
+        {/* Teaser */}
+        <p
+          ref={teaserRef}
+          className="mt-12 text-2xl sm:text-3xl md:text-4xl font-serif italic gold-shimmer"
+          style={{ opacity: 0 }}
+        >
+          Europe, this is your moment.
+        </p>
+      </div>
 
       {/* Scroll indicator */}
       <div className="absolute bottom-10 scroll-arrow">

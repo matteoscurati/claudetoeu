@@ -30,11 +30,13 @@ ClaudeToEU.com è live con asset pronti (avatar, header, OG image). Questo è il
 **Tweet #1 — PIN (14:00 CET)** [+ OG image]
 
 ```
-Anthropic refused to remove AI safety protections for the US military.
-
-The US government threatened the Defense Production Act.
+The US government told Anthropic to remove its AI safety protections.
 
 Anthropic said no.
+
+The US threatened to invoke the Defense Production Act.
+
+Anthropic still said no.
 
 America punishes principles. Europe should reward them.
 

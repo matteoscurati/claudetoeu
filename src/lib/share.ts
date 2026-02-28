@@ -4,9 +4,9 @@ const SITE_URL = "https://claudetoeu.com";
 const HASHTAG = "#ClaudeToEU";
 
 const messages = {
-  twitter: `Anthropic refused to remove AI safety protections for the US military.\n\nAmerica punishes principle. Europe should reward it.\n\n${HASHTAG}\n${SITE_URL}`,
-  linkedin: `Anthropic just told the most powerful military on Earth "No."\n\nEurope was built on the idea that power must have limits. Now add the world's leading AI safety lab, and you have the foundation for responsible AI leadership.\n\nAmerica punishes principle. Europe should reward it.\n\n${HASHTAG}`,
-  bluesky: `Anthropic refused to remove AI safety protections for the US military.\n\nAmerica punishes principle. Europe should reward it.\n\n${HASHTAG}`,
+  twitter: `Anthropic refused to remove AI safety protections for the US military.\n\nAmerica punishes principles. Europe should reward them.\n\n${HASHTAG}\n${SITE_URL}`,
+  linkedin: `Anthropic just told the most powerful military on Earth "No."\n\nEurope was built on the idea that power must have limits. Now add the world's leading AI safety lab, and you have the foundation for responsible AI leadership.\n\nAmerica punishes principles. Europe should reward them.\n\n${HASHTAG}`,
+  bluesky: `Anthropic refused to remove AI safety protections for the US military.\n\nAmerica punishes principles. Europe should reward them.\n\n${HASHTAG}`,
 };
 
 export function shareOnTwitter() {

@@ -9,7 +9,7 @@ const lines = [
   { text: "Now add the world's leading AI safety lab.", highlight: false },
   { text: "And you have the foundation for a new era of responsible AI.", highlight: false },
   {
-    text: "America punishes principle. Europe should reward it.",
+    text: "America punishes principles. Europe should reward them.",
     highlight: true,
   },
 ];

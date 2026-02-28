@@ -128,7 +128,8 @@ export default function DataStats() {
           ref={closingRef}
           className="mt-20 font-serif italic text-white/60 text-lg sm:text-xl max-w-3xl text-center leading-relaxed"
         >
-          Anthropic has already voted with its feet.{" "}
+          Anthropic has already voted with its feet.
+          <br />
           <span className="text-eu-gold">
             Now it's time to vote with its headquarters.
           </span>

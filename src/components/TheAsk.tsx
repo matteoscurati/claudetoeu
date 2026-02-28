@@ -8,7 +8,7 @@ const actions = [
   {
     number: "01",
     title: "Fast-track visas for every Anthropic employee",
-    desc: "Show the world that Europe welcomes those who choose safety over submission.",
+    desc: "Show the world that Europe welcomes those who choose responsibility over submission.",
   },
   {
     number: "02",

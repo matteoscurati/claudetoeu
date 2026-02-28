@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#0A0A12"/>
+
+  <!-- Subtle gold glow behind stars -->
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="35%">
+      <stop offset="0%" stop-color="#FFCC00" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#FFCC00" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="200" cy="200" r="160" fill="url(#glow)"/>
+
+  <g transform="translate(200,200)">
+    <!-- EU Stars circle (radius 120) -->
+    <g fill="#FFCC00">
+      <circle cx="0" cy="-120" r="15"/>
+      <circle cx="60" cy="-103.9" r="15"/>
+      <circle cx="103.9" cy="-60" r="15"/>
+      <circle cx="120" cy="0" r="15"/>
+      <circle cx="103.9" cy="60" r="15"/>
+      <circle cx="60" cy="103.9" r="15"/>
+      <circle cx="0" cy="120" r="15"/>
+      <circle cx="-60" cy="103.9" r="15"/>
+      <circle cx="-103.9" cy="60" r="15"/>
+      <circle cx="-120" cy="0" r="15"/>
+      <circle cx="-103.9" cy="-60" r="15"/>
+      <circle cx="-60" cy="-103.9" r="15"/>
+    </g>
+    <!-- Anthropic spark triangle -->
+    <path d="M-36,-48 L0,48 L36,-48 Z" fill="#DA7756" opacity="0.9"/>
+  </g>
+</svg>

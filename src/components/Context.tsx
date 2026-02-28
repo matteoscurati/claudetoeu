@@ -137,7 +137,8 @@ export default function Context() {
         ref={closingRef}
         className="mt-20 text-lg sm:text-xl md:text-2xl text-white/80 max-w-3xl text-center leading-relaxed font-serif italic"
       >
-        Anthropic chose principle over power.{" "}
+        Anthropic chose principle over power.
+        <br />
         <span className="text-anthropic-terra">
           Now they need a home that shares their values.
         </span>

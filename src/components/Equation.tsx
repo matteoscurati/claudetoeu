@@ -65,7 +65,11 @@ export default function Equation() {
           </div>
           <p className="text-sm text-dark/60 mb-4">Anthropic's Stand</p>
           <p className="font-serif text-lg text-dark/80 italic">
-            No mass surveillance. No autonomous weapons. No compromise.
+            No mass surveillance.
+            <br />
+            No autonomous weapons.
+            <br />
+            No compromise.
           </p>
           <div className="mt-6 pt-4 border-t border-dark/10">
             <span className="text-2xl font-bold text-anthropic-terra">
@@ -88,7 +92,7 @@ export default function Equation() {
           </div>
           <p className="text-sm text-dark/60 mb-4">Europe's Promise</p>
           <p className="font-serif text-lg text-dark/80 italic">
-            The only bloc brave enough to put limits on power. Democratic values, not corporate interests.
+            The only bloc brave enough to put limits on power. Democratic values, not oligarchs' power.
           </p>
           <div className="mt-6 pt-4 border-t border-dark/10">
             <span className="text-2xl font-bold text-eu-blue">
@@ -111,7 +115,7 @@ export default function Equation() {
           Global AI <span className="text-eu-gold">Leadership</span>
         </h3>
         <p className="text-white/70 mt-4 text-lg">
-          Principle + Courage = Leadership
+          Impact + Courage = Leadership
         </p>
       </div>
 

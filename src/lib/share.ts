@@ -1,6 +1,6 @@
 import { trackShare } from "./analytics";
 
-const SITE_URL = "https://claudetoeu.com";
+const SITE_URL = "https://www.claudetoeu.com";
 const HASHTAG = "#ClaudeToEU";
 
 const messages = {
